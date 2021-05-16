@@ -9,7 +9,7 @@ weatherForm.addEventListener('submit',(e) =>{
 
     const location1 = search.value
 
-    fetch('http://localhost:3000/weather?address=' + location1).then((response) =>{
+    fetch('/weather?address=' + location1).then((response) =>{
     response.json().then( ({error , forecast} ) =>{
         if (error){
             messageOne.innerHTML = 'Please check your location';
