@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        
+        <link rel="icon" href="/img/icon_app.png">
+        <link rel="stylesheet" href="/css/style.css">
+        
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>Use this to get your weather  informations</p>
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+                
+            </form>
+            <p id="forecastInfo">Your forecast informations </p>
+        </div>
+        
+        {{>footer}}
+    </body>
+    <script src="/js/app.js"></script>
+</html>
