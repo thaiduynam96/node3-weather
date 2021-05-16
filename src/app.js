@@ -60,7 +60,8 @@ app.get('/weather', (req, res) =>{
             }
             res.send({
                 address: location,
-                forecast: forecastData.weather_descriptions
+                forecast: forecastData.weather_descriptions,
+                windspeed: forecastData.wind_speed
             })
         })
     })
